@@ -9,6 +9,7 @@ set(SOURCE_FILES
     src/straw.cpp
     src/contents/content_base.cpp
     src/contents/tapioca.cpp
+    src/contents/gom_tire.cpp
     )
 
 include_directories(${PROJECT_NAME} include)

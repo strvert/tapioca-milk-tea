@@ -5,7 +5,7 @@
 #include "contents/content_base.h"
 
 class Tapioca : public ContentBase {
-    using super = Tapioca;
+    using super = ContentBase;
 
 public:
     static const inline std::string content_name = "tapioca";
