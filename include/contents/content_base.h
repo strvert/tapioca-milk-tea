@@ -2,13 +2,18 @@
 #define __TAPIOCA_MILK_TEA_CONTENT_BASE_H
 #include <string>
 
-class ContentBase{
+class ContentBase {
 protected:
     std::string name;
-    float size;
+    float radius;
+    float weight;
 
 public:
-    virtual ~ContentBase(){}
+    ContentBase(std::string name);
+    virtual ~ContentBase() {}
+
+    virtual float GetWeight();
+    virtual float GetRadius();
 };
 
 #endif  //__TAPIOCA_MILK_TEA_CONTENT_BASE_H

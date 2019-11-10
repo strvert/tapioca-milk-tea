@@ -6,7 +6,8 @@
 
 class Tapioca : public ContentBase {
 public:
-    Tapioca(std::string name);
+    static const inline std::string content_name = "tapioca";
+    Tapioca();
     virtual ~Tapioca(){};
 };
 

@@ -8,6 +8,7 @@ protected:
     float length;
 
 public:
+    Straw() = default;
     virtual ~Straw(){}
 };
 

@@ -1,4 +1,3 @@
 #include "contents/tapioca.h"
 
-Tapioca::Tapioca(std::string name) {
-}
+Tapioca::Tapioca(): ContentBase(content_name) {}
