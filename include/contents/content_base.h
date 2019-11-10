@@ -6,13 +6,15 @@ class ContentBase {
 protected:
     std::string name;
     float radius;
-    float weight;
+    float density;
 
 public:
     ContentBase(std::string name);
     virtual ~ContentBase() {}
 
     virtual float GetWeight();
+    virtual float GetVolume(); 
+    virtual float GetDensity();
     virtual float GetRadius();
 };
 
