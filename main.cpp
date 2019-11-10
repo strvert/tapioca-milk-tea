@@ -5,5 +5,5 @@
 
 int main() {
     Cup cup;
-    Tapioca tapi;
+    Tapioca tapi("tapi");
 }
