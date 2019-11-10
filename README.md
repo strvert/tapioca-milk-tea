@@ -2,7 +2,7 @@
 タピオカミルクティー
 
 ## ビルド方法
-クローン後、以下のコマンドを実行すると`tapioca-milk-tea/build/tapioca-milk-tea`という実行可能ファイルが生成される
+クローン後、以下のコマンドを実行すると`tapioca-milk-tea/build/tapioca-milk-tea`という実行可能タピオカミルクティーが生成される
 
 ```shell
 $ mkdir build
