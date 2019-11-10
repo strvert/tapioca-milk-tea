@@ -2,17 +2,22 @@
 
 #include <cmath>
 
-ContentBase::ContentBase(std::string name) : name(name) {}
+ContentBase::ContentBase(std::string name, float radius, float density)
+    : name(name), radius(radius), density(density) {}
 
-float ContentBase::GetWeight() {
-    return GetVolume() * GetDensity();
+std::string ContentBase::Name() {
+    return name;
 }
-float ContentBase::GetVolume() {
-    return (4 / 3)*M_PI*radius*radius*radius;
+
+float ContentBase::Weight() {
+    return Volume() * Density();
 }
-float ContentBase::GetDensity() {
+float ContentBase::Volume() {
+    return (4 / 3) * M_PI * radius * radius * radius;
+}
+float ContentBase::Density() {
     return density;
 }
-float ContentBase::GetRadius() {
+float ContentBase::Radius() {
     return radius;
 }

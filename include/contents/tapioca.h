@@ -5,9 +5,14 @@
 #include "contents/content_base.h"
 
 class Tapioca : public ContentBase {
+    using super = Tapioca;
+
 public:
     static const inline std::string content_name = "tapioca";
-    Tapioca();
+    static const inline float default_density = 0.5;
+
+    Tapioca(float radius);
+    Tapioca(float radius, float density);
     virtual ~Tapioca(){};
 };
 

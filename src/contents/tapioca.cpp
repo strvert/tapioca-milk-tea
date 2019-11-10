@@ -1,3 +1,7 @@
 #include "contents/tapioca.h"
+#include <iostream>
 
-Tapioca::Tapioca(): ContentBase(content_name) {}
+Tapioca::Tapioca(float radius) : Tapioca(radius, Tapioca::default_density) {}
+
+Tapioca::Tapioca(float radius, float density) : ContentBase(this->content_name, radius, density) {
+}
