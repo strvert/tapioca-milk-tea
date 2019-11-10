@@ -3,7 +3,7 @@
 #include <string>
 
 class Straw{
-protected:
+private:
     float radius;
     float length;
 

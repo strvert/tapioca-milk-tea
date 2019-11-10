@@ -10,9 +10,11 @@ int main() {
     Cup cup;
     Tapioca tapi(0.5);
     GomTire gom(0.5);
+    ContentBase content("content", 0.5, 0.5);
 
     std::vector<ContentBase> contents;
     contents.push_back(tapi);
+    contents.push_back(gom);
     contents.push_back(gom);
 
     for (auto& c: contents) {
@@ -22,5 +24,4 @@ int main() {
         std::cout << c.Volume() << std::endl;
         std::cout << c.Density() << std::endl;
     }
-
 }

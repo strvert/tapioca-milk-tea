@@ -4,13 +4,13 @@
 
 class ContentBase {
 protected:
+    ContentBase(std::string name, float radius, float density);
     std::string name;
     float radius; /* cm */
     float density; /* g/cm^3 */
     bool edible;
 
 public:
-    ContentBase(std::string name, float radius, float density);
     virtual ~ContentBase() {}
 
     virtual std::string Name();
